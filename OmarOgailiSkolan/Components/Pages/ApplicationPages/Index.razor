@@ -1,0 +1,45 @@
+﻿@page "/applications"
+@using Microsoft.AspNetCore.Components.QuickGrid
+@inject OmarOgailiSkolan.Data.OmarOgailiSkolanContext DB
+@using OmarOgailiSkolan
+@attribute [StreamRendering]
+
+<PageTitle>Index</PageTitle>
+
+@if (isLoading)
+{
+    <h3>Loading....</h3>
+}
+else
+{
+    <h1>Index</h1>
+
+    <p>
+        <a href="ansökningars/create">Create New</a>
+    </p>
+
+    <QuickGrid Class="table" Items="DB.Application">
+        <PropertyColumn Property="application => application.Name" />
+        <PropertyColumn Property="application => application.Dateofbirth" />
+        <PropertyColumn Property="application => application.Email" />
+        <PropertyColumn Property="application => application.Age" />
+
+        <TemplateColumn Context="application">
+            <a href="@($"applications/edit?id={application.Id}")">Edit</a> |
+            <a href="@($"applications/details?id={application.Id}")">Details</a> |
+            <a href="@($"applications/delete?id={application.Id}")">Delete</a>
+        </TemplateColumn>
+    </QuickGrid>
+
+    @code {
+    private bool isLoading = true;
+    private string waitingfortheSide = "";
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulate loading delay
+        await Task.Delay(2000);
+        isLoading = false;
+        waitingfortheSide = ""; // You can set your message here if needed
+    }
+}
+}

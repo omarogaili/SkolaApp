@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OmarOgailiSkolan.bundle.scp.css",
+      "PackagePath": "staticwebassets\\OmarOgailiSkolan.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OmarOgailiSkolan.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OmarOgailiSkolan.props",
+      "PackagePath": "build\\OmarOgailiSkolan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OmarOgailiSkolan.props",
+      "PackagePath": "buildMultiTargeting\\OmarOgailiSkolan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OmarOgailiSkolan.props",
+      "PackagePath": "buildTransitive\\OmarOgailiSkolan.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,88 @@
+﻿@page "/applications/create"
+@inject OmarOgailiSkolan.Data.OmarOgailiSkolanContext DB
+@using OmarOgailiSkolan
+@inject NavigationManager NavigationManager
+
+<PageTitle>Create</PageTitle>
+
+<h1>Ansök Idag</h1>
+
+<h4>Fyll blanketten nedan</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <EditForm method="post" Model="Application" OnValidSubmit="AddApplication" FormName="create" Enhance>
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" />
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label> 
+                <InputText id="name" @bind-Value="Application.Name" class="form-control" /> 
+                <ValidationMessage For="() => Application.Name" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="dateofbirth" class="form-label">Dateofbirth:</label> 
+                <InputDate id="dateofbirth" @bind-Value="Application.Dateofbirth" class="form-control" /> 
+                <ValidationMessage For="() => Application.Dateofbirth" class="text-danger" /> 
+            </div>        
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label> 
+                <InputText id="email" @bind-Value="Application.Email" class="form-control" /> 
+                <ValidationMessage For="() => Application.Email" class="text-danger" /> 
+            </div>         
+            <button type="submit" class="btn btn-primary">Create</button>
+        </EditForm>
+    </div>
+</div>
+@if (!isSaved)
+{
+    <p>Vi har tagit emot din ansöka! </p>
+}
+<div>
+    <a href="/applications">Back to List</a>
+</div>
+
+@code {
+
+    [SupplyParameterFromForm]
+    public Application Application { get; set; } = new();
+    private bool isSaved = true;
+
+    // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
+    public async Task AddApplication()
+    {
+        Application.Age = AgeConverting(Application.Dateofbirth);
+        DB.Application.Add(Application);
+        await DB.SaveChangesAsync();
+        await ReadingTheTextFile(); 
+        isSaved = false;
+        NavigationManager.NavigateTo("/applications");
+    }
+    private async Task ReadingTheTextFile()
+    {
+        await Task.Run(()=>
+    {
+        List<Application> applications = new List<Application>();
+        List<string> fillines = File.ReadAllLines("hogwarts-students.txt").ToList();
+        fillines.RemoveAt(0);
+        foreach(string line in fillines)
+        {
+            string[] parts = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+            Application application = new Application();
+            application.Name = parts[1];
+            application.Dateofbirth= DateTime.Parse(parts[2]);
+            application.Age = AgeConverting(application.Dateofbirth);
+            application.Email = parts[3];
+            applications.Add(application);
+        }
+        DB.Application.AddRange(applications);
+        DB.SaveChanges();
+    });
+    }
+    public int AgeConverting(DateTime dateofbirth)
+    {
+        var today = DateTime.Today;
+        var age = today.Year - dateofbirth.Year;
+        if (dateofbirth > today.AddYears(-age)) age--;
+        return age;
+    }
+}
