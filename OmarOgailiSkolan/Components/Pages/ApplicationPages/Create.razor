@@ -2,9 +2,10 @@
 @inject OmarOgailiSkolan.Data.OmarOgailiSkolanContext DB
 @using OmarOgailiSkolan
 @inject NavigationManager NavigationManager
+@rendermode InteractiveServer
 
 <PageTitle>Create</PageTitle>
-
+@if(isSaved){
 <h1>Ansök Idag</h1>
 
 <h4>Fyll blanketten nedan</h4>
@@ -27,29 +28,32 @@
             <div class="mb-3">
                 <label for="email" class="form-label">Email:</label> 
                 <InputText id="email" @bind-Value="Application.Email" class="form-control" /> 
-                <ValidationMessage For="() => Application.Email" class="text-danger" /> 
+                    <ValidationMessage For="() => Application.Email" class="text-danger" />
             </div>
             <div class="mb-3">
                 <label for="Age" class="form-label">Age:</label>
                 <span>@AgeConverting(Application.Dateofbirth)</span>
-                <ValidationMessage For="() => Application.Email" class="text-danger" />
+                <ValidationMessage For="() => Application.Age" class="text-danger" />
             </div>
             <button type="submit" class="btn btn-primary">Create</button>
         </EditForm>
     </div>
-</div>
-@if (!isSaved)
-{
-    <p>Vi har tagit emot din ansöka! </p>
+    </div>
 }
-<div>
-    <a href="/applications">Back to List</a>
-</div>
+else
+{
+    <h3>Vi har tagit emot din ansöka! </h3>
+    <div>
+        <a href="/applications/create" target="_blank">tillbaka till blanketten</a>
+    </div>
+}
+
 
 @code {
 
     [SupplyParameterFromForm]
     public Application Application { get; set; } = new();
+    private Validation validation = new Validation();
     private bool isSaved = true;
 
     public int AgeConverting(DateTime dateofbirth)
@@ -65,20 +69,16 @@
         {
             return Application.Age;
         }
-
     }
     // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
     public async Task AddApplication()
     {
-        // Application.Age = AgeConverting(Application.Dateofbirth);
-        var today = DateTime.Today;
-        Application.Age = today.Year - Application.Dateofbirth.Year;
-        if (Application.Dateofbirth > today.AddYears(-Application.Age)) Application.Age--;
-        DB.Application.Add(Application);
-        await DB.SaveChangesAsync();
-        // await ReadingTheTextFile(); 
-        isSaved = false;
-        NavigationManager.NavigateTo("/applications");
+        Application.Age = AgeConverting(Application.Dateofbirth);
+            DB.Application.Add(Application);
+            await DB.SaveChangesAsync();
+            // await ReadingTheTextFile();
+            isSaved = false;
+       
     }
     // private async Task ReadingTheTextFile()
     // {
@@ -101,5 +101,4 @@
     //     DB.SaveChanges();
     // });
     // }
-
 }
