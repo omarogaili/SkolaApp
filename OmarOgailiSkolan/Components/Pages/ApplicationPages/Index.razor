@@ -3,6 +3,7 @@
 @inject OmarOgailiSkolan.Data.OmarOgailiSkolanContext DB
 @using OmarOgailiSkolan
 @attribute [StreamRendering]
+@rendermode InteractiveServer
 
 <PageTitle>Index</PageTitle>
 
@@ -10,19 +11,27 @@
 {
     <h3>Loading....</h3>
 }
-else
+else if(!isLoading)
 {
-    <h1>Index</h1>
+    
+
+<h1>Index</h1>
 
     <p>
         <a href="ansökningars/create">Create New</a>
     </p>
 
-    <QuickGrid Class="table" Items="DB.Application">
-        <PropertyColumn Property="application => application.Name" />
-        <PropertyColumn Property="application => application.Dateofbirth" />
-        <PropertyColumn Property="application => application.Email" />
-        <PropertyColumn Property="application => application.Age" />
+    <QuickGrid Class="table" Items="studentFilter" Pagination="studentState">
+        <PropertyColumn Property="application => application.Name" Sortable="true" >
+        <ColumnOptions>
+            <div>
+                <input type="search" @bind="nameOftheStudent" @bind:event="oninput" autofocus />
+            </div>
+        </ColumnOptions>
+        </PropertyColumn>
+        <PropertyColumn Property="application => application.Dateofbirth" Format="yyyy/MM/dd" Sortable="true" />
+        <PropertyColumn Property="application => application.Email" Sortable="true" />
+        <PropertyColumn Property="application => application.Age" Sortable="true" />
 
         <TemplateColumn Context="application">
             <a href="@($"applications/edit?id={application.Id}")">Edit</a> |
@@ -30,16 +39,24 @@ else
             <a href="@($"applications/delete?id={application.Id}")">Delete</a>
         </TemplateColumn>
     </QuickGrid>
+    <Paginator State="studentState"/>
+}
 
-    @code {
+
+@code {
+    private string nameOftheStudent = "";
+    PaginationState studentState = new PaginationState { ItemsPerPage = 10 };
+    /// <summary>
+    /// jag valde att använda @attribute [StreamRendering] för att jag ville att användaren ska kunna
+    /// komma fram till sidan innan information har laddat färdig. men problemet är att vi måste använda
+    /// @rendermode InteractiveServer flr sort så därför sidan laddar två gånger. 
+    /// </summary>
     private bool isLoading = true;
-    private string waitingfortheSide = "";
+
     protected override async Task OnInitializedAsync()
     {
-        // Simulate loading delay
         await Task.Delay(2000);
         isLoading = false;
-        waitingfortheSide = ""; // You can set your message here if needed
     }
-}
+    IQueryable<Application> studentFilter => DB.Application.Where(s => s.Name.Contains(nameOftheStudent));
 }
