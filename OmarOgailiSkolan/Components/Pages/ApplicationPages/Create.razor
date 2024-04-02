@@ -11,7 +11,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <EditForm method="post" Model="Application" OnValidSubmit="AddApplication" FormName="create" Enhance>
+        <EditForm method="post" Model="Application" OnValidSubmit="AddApplication"  FormName=" create" Enhance>
             <DataAnnotationsValidator />
             <ValidationSummary class="text-danger" />
             <div class="mb-3">
@@ -21,14 +21,19 @@
             </div>        
             <div class="mb-3">
                 <label for="dateofbirth" class="form-label">Dateofbirth:</label> 
-                <InputDate id="dateofbirth" @bind-Value="Application.Dateofbirth" class="form-control" /> 
-                <ValidationMessage For="() => Application.Dateofbirth" class="text-danger" /> 
+                <InputDate id="dateofbirth" @bind-Value="Application.Dateofbirth"  class="form-control"  />
+                <ValidationMessage For="() => Application.Dateofbirth" class="text-danger" />
             </div>        
             <div class="mb-3">
                 <label for="email" class="form-label">Email:</label> 
                 <InputText id="email" @bind-Value="Application.Email" class="form-control" /> 
                 <ValidationMessage For="() => Application.Email" class="text-danger" /> 
-            </div>         
+            </div>
+            <div class="mb-3">
+                <label for="Age" class="form-label">Age:</label>
+                <span>@AgeConverting(Application.Dateofbirth)</span>
+                <ValidationMessage For="() => Application.Email" class="text-danger" />
+            </div>
             <button type="submit" class="btn btn-primary">Create</button>
         </EditForm>
     </div>
@@ -47,42 +52,54 @@
     public Application Application { get; set; } = new();
     private bool isSaved = true;
 
-    // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
-    public async Task AddApplication()
-    {
-        Application.Age = AgeConverting(Application.Dateofbirth);
-        DB.Application.Add(Application);
-        await DB.SaveChangesAsync();
-        await ReadingTheTextFile(); 
-        isSaved = false;
-        NavigationManager.NavigateTo("/applications");
-    }
-    private async Task ReadingTheTextFile()
-    {
-        await Task.Run(()=>
-    {
-        List<Application> applications = new List<Application>();
-        List<string> fillines = File.ReadAllLines("hogwarts-students.txt").ToList();
-        fillines.RemoveAt(0);
-        foreach(string line in fillines)
-        {
-            string[] parts = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-            Application application = new Application();
-            application.Name = parts[1];
-            application.Dateofbirth= DateTime.Parse(parts[2]);
-            application.Age = AgeConverting(application.Dateofbirth);
-            application.Email = parts[3];
-            applications.Add(application);
-        }
-        DB.Application.AddRange(applications);
-        DB.SaveChanges();
-    });
-    }
     public int AgeConverting(DateTime dateofbirth)
     {
         var today = DateTime.Today;
-        var age = today.Year - dateofbirth.Year;
-        if (dateofbirth > today.AddYears(-age)) age--;
-        return age;
+        Application.Age = today.Year - dateofbirth.Year;
+        if (dateofbirth > today.AddYears(-Application.Age)) Application.Age--;
+        if (Application.Age < 10)
+        {
+            return 0;   
+        }
+        else
+        {
+            return Application.Age;
+        }
+
     }
+    // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
+    public async Task AddApplication()
+    {
+        // Application.Age = AgeConverting(Application.Dateofbirth);
+        var today = DateTime.Today;
+        Application.Age = today.Year - Application.Dateofbirth.Year;
+        if (Application.Dateofbirth > today.AddYears(-Application.Age)) Application.Age--;
+        DB.Application.Add(Application);
+        await DB.SaveChangesAsync();
+        // await ReadingTheTextFile(); 
+        isSaved = false;
+        NavigationManager.NavigateTo("/applications");
+    }
+    // private async Task ReadingTheTextFile()
+    // {
+    //     await Task.Run(()=>
+    // {
+    //     List<Application> applications = new List<Application>();
+    //     List<string> fillines = File.ReadAllLines("hogwarts-students.txt").ToList();
+    //     fillines.RemoveAt(0);
+    //     foreach(string line in fillines)
+    //     {
+    //         string[] parts = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+    //         Application application = new Application();
+    //         application.Name = parts[1];
+    //         application.Dateofbirth= DateTime.Parse(parts[2]);
+    //         application.Age = AgeConverting();
+    //         application.Email = parts[3];
+    //         applications.Add(application);
+    //     }
+    //     DB.Application.AddRange(applications);
+    //     DB.SaveChanges();
+    // });
+    // }
+
 }

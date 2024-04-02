@@ -260,3 +260,4 @@ C:\Users\Admin\OneDrive\Desktop\GrundProgramering-Hög\C#för_Lektioner\inlämni
 C:\Users\Admin\OneDrive\Desktop\GrundProgramering-Hög\C#för_Lektioner\inlämning3\OmarOgailiSkolan\OmarOgailiSkolan\obj\Debug\net8.0\OmarOgailiSkolan.pdb
 C:\Users\Admin\OneDrive\Desktop\GrundProgramering-Hög\C#för_Lektioner\inlämning3\OmarOgailiSkolan\OmarOgailiSkolan\obj\Debug\net8.0\OmarOgailiSkolan.genruntimeconfig.cache
 C:\Users\Admin\OneDrive\Desktop\GrundProgramering-Hög\C#för_Lektioner\inlämning3\OmarOgailiSkolan\OmarOgailiSkolan\obj\Debug\net8.0\ref\OmarOgailiSkolan.dll
+C:\Users\Admin\OneDrive\Desktop\GrundProgramering-Hög\C#för_Lektioner\inlämning3\OmarOgailiSkolan\OmarOgailiSkolan\obj\Debug\net8.0\OmarOgailiSkolan.sourcelink.json
