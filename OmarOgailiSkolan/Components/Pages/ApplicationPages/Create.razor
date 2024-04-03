@@ -5,39 +5,52 @@
 @rendermode InteractiveServer
 
 <PageTitle>Create</PageTitle>
-@if(isSaved){
-<h1>Ansök Idag</h1>
+@if (isSaved)
+{
+    <h1>Ansök Idag</h1>
 
-<h4>Fyll blanketten nedan</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <EditForm method="post" Model="Application" OnValidSubmit="AddApplication"  FormName=" create" Enhance>
-            <DataAnnotationsValidator />
-            <ValidationSummary class="text-danger" />
-            <div class="mb-3">
-                <label for="name" class="form-label">Name:</label> 
-                <InputText id="name" @bind-Value="Application.Name" class="form-control" /> 
-                <ValidationMessage For="() => Application.Name" class="text-danger" /> 
-            </div>        
-            <div class="mb-3">
-                <label for="dateofbirth" class="form-label">Dateofbirth:</label> 
-                <InputDate id="dateofbirth" @bind-Value="Application.Dateofbirth"  class="form-control"  />
-                <ValidationMessage For="() => Application.Dateofbirth" class="text-danger" />
-            </div>        
-            <div class="mb-3">
-                <label for="email" class="form-label">Email:</label> 
-                <InputText id="email" @bind-Value="Application.Email" class="form-control" /> 
+    <h4>Fyll blanketten nedan</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <EditForm method="post" Model="Application" OnValidSubmit="AddApplication" FormName=" create" Enhance>
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger" />
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <InputText id="name" @bind-Value="Application.Name" class="form-control" />
+                    @if (!Valid)
+                    {
+                        <ValidationMessage For="() => Application.Name" class="text-danger" />
+                        <p>@nameError</p>
+                    }
+
+                </div>
+                <div class="mb-3">
+                    <label for="dateofbirth" class="form-label">Dateofbirth:</label>
+                    <InputDate id="dateofbirth" @bind-Value="Application.Dateofbirth" class="form-control" />
+                    <ValidationMessage For="() => Application.Dateofbirth" class="text-danger" />
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <InputText id="email" @bind-Value="Application.Email" class="form-control" />
                     <ValidationMessage For="() => Application.Email" class="text-danger" />
-            </div>
-            <div class="mb-3">
-                <label for="Age" class="form-label">Age:</label>
-                <span>@AgeConverting(Application.Dateofbirth)</span>
-                <ValidationMessage For="() => Application.Age" class="text-danger" />
-            </div>
-            <button type="submit" class="btn btn-primary">Create</button>
-        </EditForm>
-    </div>
+                    @if (!Valid)
+                    {
+
+                        <p id="emailError">@emailError</p>
+                    }
+                </div>
+                <div class="mb-3">
+                    <label for="Age" class="form-label">Age:</label>
+                    <span>@AgeConverting(Application.Dateofbirth)</span>
+                    <ValidationMessage For="() => Application.Age" class="text-danger" />
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </EditForm>
+        </div>
     </div>
 }
 else
@@ -55,30 +68,61 @@ else
     public Application Application { get; set; } = new();
     private Validation validation = new Validation();
     private bool isSaved = true;
-
-    public int AgeConverting(DateTime dateofbirth)
+    string emailError = "";
+    string nameError = "";
+    private bool Valid = true;
+    /// <summary>
+    /// Den metoden ränkar åldern, samt att jag kontrollerar om användaren har fyllt år i år.
+    /// metoden tar en DateTime parameter  och innehåller en variabel som spara dagens DateTime.Today
+    /// detta anvädnare jag senare för att räkna elevens ålder jag minskar today.år från den parameter år som jag skickar
+    /// en till metoden. med if satsen kontrollerar jag om födelsedatumet har inträffats i år eller inte samt om
+    /// födelsedagen är före den dagen vi är på idag. om den inte har det då minska vi med ett för att personen har inte
+    /// fyllt år än.
+    /// </summary>
+    /// <param name="dateOfBirth">En parameter som skickas till metoden och  den  ska vara då Application.Dateofbirt </param>
+    /// <returns>Metoden ska retunerar Application.Age jag valde inte skapa en variabel för att spara åldren i
+    ///  eftersom jag anser att detta var mer tydlig för mig att den metoden ska kontrollerar åldren och skicka tillbaka
+    ///   åldern så att jag kan spara det i databasen samt visa den i sidan när användaren skriver sin födelsedatum
+    /// </returns>
+    private int AgeConverting(DateTime dateOfBirth)
     {
         var today = DateTime.Today;
-        Application.Age = today.Year - dateofbirth.Year;
-        if (dateofbirth > today.AddYears(-Application.Age)) Application.Age--;
-        if (Application.Age < 10)
+        Application.Age = today.Year - dateOfBirth.Year;
+        if (dateOfBirth.Date > today.AddYears(-Application.Age) || dateOfBirth.Date > today)
         {
-            return 0;   
+            Application.Age--;
+            return Application.Age;
         }
         else
         {
-            return Application.Age;
+            return 0;
         }
     }
     // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
     public async Task AddApplication()
     {
-        Application.Age = AgeConverting(Application.Dateofbirth);
+        if (Validation.RegexEmailCheck(Application.Email) && Validation.NameValid(Application.Name))
+        {
+
+            Valid = true;
+            AgeConverting(Application.Dateofbirth);
             DB.Application.Add(Application);
             await DB.SaveChangesAsync();
             // await ReadingTheTextFile();
             isSaved = false;
-       
+        }
+        if (!Validation.NameValid(Application.Name))
+        {
+            Valid = false;
+            nameError = "Ogilit namn! för & efter namn behöver du skriva ";
+        }
+        if (!Validation.RegexEmailCheck(Application.Email))
+        {
+            Valid = false;
+            emailError = "Ogilit Email";
+
+        }
+
     }
     // private async Task ReadingTheTextFile()
     // {

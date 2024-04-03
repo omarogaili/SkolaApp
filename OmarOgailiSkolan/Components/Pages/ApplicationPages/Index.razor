@@ -19,6 +19,7 @@ else if(!isLoading)
 
     <p>
         <a href="ansökningars/create">Create New</a>
+
     </p>
 
     <QuickGrid Class="table" Items="studentFilter" Pagination="studentState">
@@ -40,12 +41,27 @@ else if(!isLoading)
         </TemplateColumn>
     </QuickGrid>
     <Paginator State="studentState"/>
+    <input type="search" @bind="ageinput" @bind:event="oninput" />
+    <button type="button" @onclick="AgeSearch">Sök</button>
+
+    @if (ageResults != null && ageResults.Any()) 
+    {
+        <h2>Resultat för ålder: @ageinput</h2>
+        <ul>
+            @foreach (var age in ageResults)
+            {
+                <li>@age</li>
+            }
+        </ul>
+    }
 }
 
 
 @code {
     private string nameOftheStudent = "";
     PaginationState studentState = new PaginationState { ItemsPerPage = 10 };
+    private int ageinput;
+    private List<int> ageResults;
     /// <summary>
     /// jag valde att använda @attribute [StreamRendering] för att jag ville att användaren ska kunna
     /// komma fram till sidan innan information har laddat färdig. men problemet är att vi måste använda
@@ -59,4 +75,23 @@ else if(!isLoading)
         isLoading = false;
     }
     IQueryable<Application> studentFilter => DB.Application.Where(s => s.Name.Contains(nameOftheStudent));
+
+    // private void AgeSearch()
+    // {
+    //     ages = new List<int> ();
+    //     var ageQuery = DB.Application.Where(a => a.Age == ageinput);
+    //     foreach (var a in ageQuery)
+    //     {
+    //         ages.Add(a.Age);
+    //     }
+    // }
+    private void AgeSearch()
+    {
+        ageResults = new List<int>();
+        var ageQuery = DB.Application.Where(a => a.Age == ageinput);
+        foreach (var a in ageQuery)
+        {
+            ageResults.Add(a.Age);
+        }
+    }
 }
