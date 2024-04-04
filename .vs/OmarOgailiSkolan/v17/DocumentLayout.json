@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\omarogailiskolan\\components\\pages\\applicationpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\pages\\applicationpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|c:\\users\\admin\\onedrive\\desktop\\grundprogramering-h\u00F6g\\c#f\u00F6r_lektioner\\inl\u00E4mning3\\omarogailiskolan\\omarogailiskolan\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\omarogailiskolan\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\omarogailiskolan\\components\\pages\\applicationpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\pages\\applicationpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\omarogailiskolan\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -30,32 +30,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Validation.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Validation.cs",
               "RelativeDocumentMoniker": "OmarOgailiSkolan\\Validation.cs",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Validation.cs",
               "RelativeToolTip": "OmarOgailiSkolan\\Validation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T12:23:03.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
               "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
               "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
               "RelativeToolTip": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-31T07:26:55.402Z"
+              "WhenOpened": "2024-03-31T07:26:55.402Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -71,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Create.razor",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Create.razor",
               "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Create.razor",
@@ -83,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Application.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Application.cs",
               "RelativeDocumentMoniker": "OmarOgailiSkolan\\Application.cs",
