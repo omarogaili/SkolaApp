@@ -19,7 +19,7 @@
                 <div class="mb-3">
                     <label for="name" class="form-label">Name:</label>
                     <InputText id="name" @bind-Value="Application.Name" class="form-control" />
-                    @if (!Valid)
+                    @if (!validationMessage)
                     {
                         <ValidationMessage For="() => Application.Name" class="text-danger" />
                         <p>@nameError</p>
@@ -37,7 +37,7 @@
                     <label for="email" class="form-label">Email:</label>
                     <InputText id="email" @bind-Value="Application.Email" class="form-control" />
                     <ValidationMessage For="() => Application.Email" class="text-danger" />
-                    @if (!Valid)
+                    @if (!validationMessage)
                     {
 
                         <p id="emailError">@emailError</p>
@@ -45,7 +45,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="Age" class="form-label">Age:</label>
-                    <span>@AgeConverting(Application.Dateofbirth)</span>
+                    <span>@validation.AgeConverting(Application.Dateofbirth)</span>
+                    @if (validation.AgeConverting(Application.Dateofbirth) > 10)
+                    {
+                        Application.Age = validation.AgeConverting(Application.Dateofbirth);
+                    }
                     <ValidationMessage For="() => Application.Age" class="text-danger" />
                 </div>
                 <button type="submit" class="btn btn-primary">Create</button>
@@ -70,7 +74,7 @@ else
     private bool isSaved = true;
     string emailError = "";
     string nameError = "";
-    private bool Valid = true;
+    private bool validationMessage = true;
     /// <summary>
     /// Den metoden ränkar åldern, samt att jag kontrollerar om användaren har fyllt år i år.
     /// metoden tar en DateTime parameter  och innehåller en variabel som spara dagens DateTime.Today
@@ -84,43 +88,28 @@ else
     ///  eftersom jag anser att detta var mer tydlig för mig att den metoden ska kontrollerar åldren och skicka tillbaka
     ///   åldern så att jag kan spara det i databasen samt visa den i sidan när användaren skriver sin födelsedatum
     /// </returns>
-    private int AgeConverting(DateTime dateOfBirth)
-    {
-        var today = DateTime.Today;
-        Application.Age = today.Year - dateOfBirth.Year;
-        if (dateOfBirth.Date > today.AddYears(-Application.Age) || dateOfBirth.Date > today)
-        {
-            Application.Age--;
-            return Application.Age;
-        }
-        else
-        {
-            return 0;
-        }
-    }
+    /// 
     // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
     public async Task AddApplication()
     {
-        if (Validation.RegexEmailCheck(Application.Email) && Validation.NameValid(Application.Name))
+         
+        if (Validation.RegexEmailCheck(Application.Email) && validation.NameValid(Application.Name))
         {
-
-            Valid = true;
-            AgeConverting(Application.Dateofbirth);
+            validationMessage = true;
             DB.Application.Add(Application);
             await DB.SaveChangesAsync();
             // await ReadingTheTextFile();
             isSaved = false;
         }
-        if (!Validation.NameValid(Application.Name))
+        if (!validation.NameValid(Application.Name))
         {
-            Valid = false;
+            validationMessage = false;
             nameError = "Ogilit namn! för & efter namn behöver du skriva ";
         }
         if (!Validation.RegexEmailCheck(Application.Email))
         {
-            Valid = false;
+            validationMessage = false;
             emailError = "Ogilit Email";
-
         }
 
     }

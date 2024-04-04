@@ -12,6 +12,7 @@ namespace OmarOgailiSkolan
         /// </summary>
         /// <param name="emailInput"> prameter som vi tar in i motden för att genomföra kontrollen, den framställer application.Email som
         /// användaren kommer och skriva in i blanketten</param>
+        /// 
         public static bool RegexEmailCheck(string emailInput)
         {
             return Regex.IsMatch(emailInput, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
@@ -27,7 +28,7 @@ namespace OmarOgailiSkolan
         /// </summary>
         /// <param name="nameInput">den stringen som vi ska ta emot från användaren och framställer Application.Name</param>
         /// <returns></returns>
-        public static bool NameValid(string nameInput)
+        public   bool NameValid(string nameInput)
         {
             if(!nameInput.Contains(" "))
             {
@@ -50,6 +51,19 @@ namespace OmarOgailiSkolan
                 return false;
             }
         }
+        public int AgeConverting(DateTime dateOfBirth)
+        {
+            var today = DateTime.Today;
+             int age = today.Year - dateOfBirth.Year;
+            if (dateOfBirth.Date > today.AddYears(-age) || dateOfBirth.Date > today)
+            {
+                age--;
+                return age;
+            }
+             return age;
+        }
+
+
 
     }
 }

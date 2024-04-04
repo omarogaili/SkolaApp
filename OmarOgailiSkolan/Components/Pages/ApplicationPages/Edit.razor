@@ -25,7 +25,11 @@ else
                 <div class="mb-3">
                     <label for="name" class="form-label">Name:</label>
                     <InputText id="name" @bind-Value="Application.Name" class="form-control" />
-                    <ValidationMessage For="() => Application.Name" class="text-danger" />
+                    @if (validationMessage && !validation.NameValid(Application.Name))
+                    {
+                        <ValidationMessage For="() => Application.Name" class="text-danger" />
+                        <p>@nameError</p>
+                    }
                 </div>
                 <div class="mb-3">
                     <label for="dateofbirth" class="form-label">Dateofbirth:</label>
@@ -35,11 +39,19 @@ else
                 <div class="mb-3">
                     <label for="email" class="form-label">Email:</label>
                     <InputText id="email" @bind-Value="Application.Email" class="form-control" />
-                    <ValidationMessage For="() => Application.Email" class="text-danger" />
+                    @if (validationMessage)
+                    {
+                        <ValidationMessage For="() => Application.Email" class="text-danger" />
+                        <p id="emailError">@emailError</p>
+                    }
                 </div>
                 <div class="mb-3">
-                    <label for="age" class="form-label">Age:</label>
-                    <InputNumber id="age" @bind-Value="Application.Age" class="form-control" />
+                    <label for="Age" class="form-label">Age:</label>
+                    <span>@validation.AgeConverting(Application.Dateofbirth)</span>
+                    @if (validation.AgeConverting(Application.Dateofbirth) > 10)
+                    {
+                        Application.Age = validation.AgeConverting(Application.Dateofbirth);
+                    }
                     <ValidationMessage For="() => Application.Age" class="text-danger" />
                 </div>
                 <button type="submit" class="btn btn-primary">Save</button>
@@ -58,6 +70,10 @@ else
 
     [SupplyParameterFromForm]
     public Application? Application { get; set; }
+    private Validation validation = new Validation();
+    string emailError = "";
+    string nameError = "";
+    private bool validationMessage = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -74,23 +90,37 @@ else
     public async Task UpdateApplication()
     {
         DB.Attach(Application!).State = EntityState.Modified;
-
         try
         {
-            await DB.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!ApplicationExists(Application!.Id))
+            if (Validation.RegexEmailCheck(Application.Email) && validation.NameValid(Application.Name))
             {
-                NavigationManager.NavigateTo("notfound");
-            }
-            else
-            {
-                throw;
-            }
+                await DB.SaveChangesAsync();
+            } 
         }
 
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ApplicationExists(Application!.Id))
+                {
+                    NavigationManager.NavigateTo("notfound");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        
+        if (!validation.NameValid(Application.Name))
+        {
+            validationMessage = true;
+            nameError = "Ogilit namn! för & efter namn behöver du skriva ";
+        }
+        if (!Validation.RegexEmailCheck(Application.Email))
+        {
+            validationMessage = true;
+            emailError = "Ogilit Email";
+
+        }
         NavigationManager.NavigateTo("/applications");
     }
 
