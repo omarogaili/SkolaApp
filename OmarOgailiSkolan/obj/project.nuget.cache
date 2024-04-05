@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J72vlbb4D11d3LgPvpeTGwVzgfdThc0ERmsEg93q72NfCxxUVOtQ4rx9ktGoOs9/IcICDedEJuefeDMlX02ADA==",
+  "dgSpecHash": "XcTG7C/QLx9d2SsmC4AO5j/G/XZGVyF+3+C9b81voJQ6DnGWDgpvRA8OgIvmWorF7PW7DX1t5pJRZAsCFx/EAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\OmarOgailiSkolan.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\OmarOgailiSkolan.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

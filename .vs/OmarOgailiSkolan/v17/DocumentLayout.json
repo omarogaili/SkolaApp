@@ -1,30 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|c:\\users\\admin\\onedrive\\desktop\\grundprogramering-h\u00F6g\\c#f\u00F6r_lektioner\\inl\u00E4mning3\\omarogailiskolan\\omarogailiskolan\\components\\pages\\applicationpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\pages\\applicationpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|c:\\users\\admin\\onedrive\\desktop\\grundprogramering-h\u00F6g\\c#f\u00F6r_lektioner\\inl\u00E4mning3klar\\omarogailiskolan\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\omarogailiskolan\\components\\pages\\applicationpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\pages\\applicationpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\omarogailiskolan\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\omarogailiskolan\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\omarogailiskolan\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\omarogailiskolan\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\omarogailiskolan\\wwwroot\\validationstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\wwwroot\\validationstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|c:\\users\\admin\\onedrive\\desktop\\grundprogramering-h\u00F6g\\c#f\u00F6r_lektioner\\inl\u00E4mning3\\omarogailiskolan\\omarogailiskolan\\components\\pages\\applicationpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\omarogailiskolan\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\omarogailiskolan\\components\\pages\\applicationpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\pages\\applicationpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\omarogailiskolan\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\omarogailiskolan\\components\\pages\\applicationpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\pages\\applicationpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\omarogailiskolan\\components\\pages\\applicationpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\components\\pages\\applicationpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\omarogailiskolan\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E83F92A4-A1B7-42C3-942B-815F03FA27AA}|OmarOgailiSkolan\\OmarOgailiSkolan.csproj|solutionrelative:omarogailiskolan\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +46,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Edit.razor",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Edit.razor",
-              "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Edit.razor",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Edit.razor",
-              "RelativeToolTip": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Edit.razor",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAHgAAAAoAAAA",
+              "DocumentIndex": 1,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "OmarOgailiSkolan\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-04T12:07:44.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T13:14:02.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ValidationStyle.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\wwwroot\\ValidationStyle.css",
+              "RelativeDocumentMoniker": "OmarOgailiSkolan\\wwwroot\\ValidationStyle.css",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\wwwroot\\ValidationStyle.css",
+              "RelativeToolTip": "OmarOgailiSkolan\\wwwroot\\ValidationStyle.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-05T13:02:01.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\App.razor",
+              "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\App.razor",
+              "RelativeToolTip": "OmarOgailiSkolan\\Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-05T12:59:50.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Edit.razor",
+              "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Edit.razor",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Edit.razor",
+              "RelativeToolTip": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Edit.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T12:07:44.423Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Validation.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Validation.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Validation.cs",
               "RelativeDocumentMoniker": "OmarOgailiSkolan\\Validation.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Validation.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Validation.cs",
               "RelativeToolTip": "OmarOgailiSkolan\\Validation.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T12:23:03.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
-              "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
-              "RelativeToolTip": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-31T07:26:55.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T12:23:03.488Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "OmarOgailiSkolan\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABAAAAA",
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
+              "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
+              "RelativeToolTip": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-31T07:25:35.09Z"
+              "WhenOpened": "2024-03-31T07:26:55.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "OmarOgailiSkolan\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T07:25:35.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Application.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Application.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Application.cs",
               "RelativeDocumentMoniker": "OmarOgailiSkolan\\Application.cs",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Application.cs",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Application.cs",
               "RelativeToolTip": "OmarOgailiSkolan\\Application.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T07:15:11.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-31T07:15:11.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Create.razor",
-              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Create.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Create.razor",
               "RelativeDocumentMoniker": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Create.razor",
-              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Create.razor",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-H\u00F6g\\C#f\u00F6r_Lektioner\\inl\u00E4mning3klar\\OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Create.razor",
               "RelativeToolTip": "OmarOgailiSkolan\\Components\\Pages\\ApplicationPages\\Create.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGcAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-31T07:21:48.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-31T07:21:48.929Z"
             }
           ]
         }

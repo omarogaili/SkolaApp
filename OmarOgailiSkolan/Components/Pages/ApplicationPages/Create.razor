@@ -3,7 +3,7 @@
 @using OmarOgailiSkolan
 @inject NavigationManager NavigationManager
 @rendermode InteractiveServer
-
+<link rel="stylesheet" href="ValidationStyle.css" />
 <PageTitle>Create</PageTitle>
 @if (isSaved)
 {
@@ -22,7 +22,7 @@
                     @if (!validationMessage)
                     {
                         <ValidationMessage For="() => Application.Name" class="text-danger" />
-                        <p>@nameError</p>
+                        <p id="emailError">@nameError</p>
                     }
 
                 </div>
@@ -93,7 +93,7 @@ else
     public async Task AddApplication()
     {
          
-        if (Validation.RegexEmailCheck(Application.Email) && validation.NameValid(Application.Name))
+        if (Validation.RegexEmailCheck(Application.Email) && Validation.NameValid(Application.Name))
         {
             validationMessage = true;
             DB.Application.Add(Application);
@@ -101,7 +101,7 @@ else
             // await ReadingTheTextFile();
             isSaved = false;
         }
-        if (!validation.NameValid(Application.Name))
+        if (!Validation.NameValid(Application.Name))
         {
             validationMessage = false;
             nameError = "Ogilit namn! för & efter namn behöver du skriva ";

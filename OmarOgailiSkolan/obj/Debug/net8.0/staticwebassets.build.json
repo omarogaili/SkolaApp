@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+11pVPXoNBt+niPM5KIC7MxFwWJzB9mdNsZegyNgFLU=",
+  "Hash": "ojj4Dc/W3HKc7KCtfos/BmA6veBUz0Mvr6LchnK+gcw=",
   "Source": "OmarOgailiSkolan",
   "BasePath": "_content/OmarOgailiSkolan",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "OmarOgailiSkolan\\wwwroot",
       "Source": "OmarOgailiSkolan",
-      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\",
       "BasePath": "_content/OmarOgailiSkolan",
       "Pattern": "**"
     }
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.3\\staticwebassets\\QuickGrid.razor.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OmarOgailiSkolan.styles.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OmarOgailiSkolan.styles.css",
       "SourceId": "OmarOgailiSkolan",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/OmarOgailiSkolan",
       "RelativePath": "OmarOgailiSkolan.styles.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OmarOgailiSkolan.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OmarOgailiSkolan.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OmarOgailiSkolan.bundle.scp.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OmarOgailiSkolan.bundle.scp.css",
       "SourceId": "OmarOgailiSkolan",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/OmarOgailiSkolan",
       "RelativePath": "OmarOgailiSkolan.bundle.scp.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OmarOgailiSkolan.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OmarOgailiSkolan.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\app.css",
       "SourceId": "OmarOgailiSkolan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\",
       "BasePath": "_content/OmarOgailiSkolan",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "OmarOgailiSkolan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\",
       "BasePath": "_content/OmarOgailiSkolan",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "OmarOgailiSkolan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\",
       "BasePath": "_content/OmarOgailiSkolan",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\favicon.png",
       "SourceId": "OmarOgailiSkolan",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\",
       "BasePath": "_content/OmarOgailiSkolan",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\ValidationStyle.css",
+      "SourceId": "OmarOgailiSkolan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\",
+      "BasePath": "_content/OmarOgailiSkolan",
+      "RelativePath": "ValidationStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ValidationStyle.css"
     }
   ]
 }
