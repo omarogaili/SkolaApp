@@ -1,23 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OmarOgailiSkolan.bundle.scp.css",
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OmarOgailiSkolan.bundle.scp.css",
       "PackagePath": "staticwebassets\\OmarOgailiSkolan.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\app.css",
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\ValidationStyle.css",
+      "PackagePath": "staticwebassets\\ValidationStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3\\OmarOgailiSkolan\\OmarOgailiSkolan\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\Admin\\OneDrive\\Desktop\\GrundProgramering-Hög\\C#för_Lektioner\\inlämning3klar\\OmarOgailiSkolan\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {

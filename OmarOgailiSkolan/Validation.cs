@@ -28,16 +28,16 @@ namespace OmarOgailiSkolan
         /// </summary>
         /// <param name="nameInput">den stringen som vi ska ta emot från användaren och framställer Application.Name</param>
         /// <returns></returns>
-        public   bool NameValid(string nameInput)
+        public static bool NameValid(string nameInput)
         {
-            if(!nameInput.Contains(" "))
+            if (!nameInput.Contains(" "))
             {
                 return false;
             }
             if (nameInput.Contains(" "))
             {
                 var nameParts = nameInput.Split(' ');
-                if (nameParts[1].Trim().Length == 0)
+                if (nameParts[1].Trim().Length < 2)
                 {
                     return false;
                 }
@@ -54,13 +54,13 @@ namespace OmarOgailiSkolan
         public int AgeConverting(DateTime dateOfBirth)
         {
             var today = DateTime.Today;
-             int age = today.Year - dateOfBirth.Year;
+            int age = today.Year - dateOfBirth.Year;
             if (dateOfBirth.Date > today.AddYears(-age) || dateOfBirth.Date > today)
             {
                 age--;
                 return age;
             }
-             return age;
+            return age;
         }
 
 
