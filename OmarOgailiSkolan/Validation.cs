@@ -12,8 +12,11 @@ namespace OmarOgailiSkolan
         /// </summary>
         /// <param name="emailInput"> prameter som vi tar in i motden för att genomföra kontrollen, den framställer application.Email som
         /// användaren kommer och skriva in i blanketten</param>
-        /// 
-        public static bool RegexEmailCheck(string emailInput)
+        /// men egen takne för att validera email. då tänkte jag att jag kollar efter @ och där ska göra en split och kollar först hur långt är 
+        /// texten som efter @ är det 1 då är det fel. sen skulle jag kolla om det finns . och gör också en split 
+        /// och är som mist 1 då är det fel alltså längden. men jag googlade fram den metoden och då tyckte att den är mycket mer clean Code 
+        /// därför valde jag den. 
+        public static bool EmailCheck(string emailInput)
         {
             return Regex.IsMatch(emailInput, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
         }
@@ -51,7 +54,15 @@ namespace OmarOgailiSkolan
                 return false;
             }
         }
-        public int AgeConverting(DateTime dateOfBirth)
+        /// <summary>
+        /// i den metoden så räkna jag ut åldren från födelsedatum, det som jag gör i den metoden är att jag först hämtar dagens datum 
+        /// sedan så skapar jag en variabel som int age för att spara beräkningen i, där minska jag dagens år från födelsedatumets år. 
+        /// sen gjorde jag en test för att kolla om födelse datumet har inträffa i år eller inte och sedan retunerar jag åldren. 
+        /// </summary>
+        /// <param name="dateOfBirth">det är den födelsedatumet som jag får från användaren, så jag skickar in den parametern till metoden
+        /// och den är då Application.DateOfBirth</param>
+        /// <returns></returns>
+        public int Agecalculate(DateTime dateOfBirth)
         {
             var today = DateTime.Today;
             int age = today.Year - dateOfBirth.Year;

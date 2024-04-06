@@ -47,10 +47,10 @@ else
                 </div>
                 <div class="mb-3">
                     <label for="Age" class="form-label">Age:</label>
-                    <span>@validation.AgeConverting(Application.Dateofbirth)</span>
-                    @if (validation.AgeConverting(Application.Dateofbirth) > 10)
+                    <span>@validation.Agecalculate(Application.Dateofbirth)</span>
+                    @if (validation.Agecalculate(Application.Dateofbirth) > 10)
                     {
-                        Application.Age = validation.AgeConverting(Application.Dateofbirth);
+                        Application.Age = validation.Agecalculate(Application.Dateofbirth);
                     }
                     <ValidationMessage For="() => Application.Age" class="text-danger" />
                 </div>
@@ -89,7 +89,7 @@ else
     public async Task UpdateApplication()
     {
         DB.Attach(Application!).State = EntityState.Modified;
-        if (Validation.NameValid(Application.Name) && Validation.RegexEmailCheck(Application.Email))
+        if (Validation.NameValid(Application.Name) && Validation.EmailCheck(Application.Email))
         {
 
             try
@@ -117,7 +117,7 @@ else
             validationMessage = false;
             nameError = "Ogilit namn! för & efter namn behöver du skriva ";
         }
-        if (!Validation.RegexEmailCheck(Application.Email))
+        if (!Validation.EmailCheck(Application.Email))
         {
             validationMessage = false;
             emailError = "Ogilit Email";

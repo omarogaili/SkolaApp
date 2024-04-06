@@ -15,10 +15,10 @@ else if(!isLoading)
 {
     
 
-<h1>Index</h1>
+<h1>Ansökningar</h1>
 
     <p>
-        <a href="ansökningars/create">Create New</a>
+        <a href=" /applications/Ansökan">ny ansöka</a>
 
     </p>
 
@@ -60,6 +60,13 @@ else if(!isLoading)
         await Task.Delay(2000);
         isLoading = false;
     }
+    /// <summary>
+    /// eftersom jag vald och omvalnda åldren och spara den i databasen så när jag ska fixa en ålder filter så jag tänkte göra så där
+    /// jag använder IQueryable som de har förklarat i videon men sedan så hämtar jag bara ålder från databasen genom att använda Get
+    /// så om åldern är 0 då ska man reutnerar hela Applications tabellen annars så kollar jag vart i tabellen har vi ett ålder som lika med
+    /// det ålderna som användaren söker efter
+    /// Det som jag behöver kolla på är att ageOfTheStudnet om jag får den och vara töm  by default skulle varit mycket bättre . 
+    /// </summary>
     IQueryable<Application> ageStudentFilter
     {
         get

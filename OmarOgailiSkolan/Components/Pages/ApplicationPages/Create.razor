@@ -1,4 +1,4 @@
-﻿@page "/applications/create"
+﻿@page "/applications/Ansökan"
 @inject OmarOgailiSkolan.Data.OmarOgailiSkolanContext DB
 @using OmarOgailiSkolan
 @inject NavigationManager NavigationManager
@@ -19,6 +19,7 @@
                 <div class="mb-3">
                     <label for="name" class="form-label">Name:</label>
                     <InputText id="name" @bind-Value="Application.Name" class="form-control" />
+                    @*om namnet inte är grön då kommer detta meddelandet *@
                     @if (!validationMessage)
                     {
                         <ValidationMessage For="() => Application.Name" class="text-danger" />
@@ -37,6 +38,7 @@
                     <label for="email" class="form-label">Email:</label>
                     <InputText id="email" @bind-Value="Application.Email" class="form-control" />
                     <ValidationMessage For="() => Application.Email" class="text-danger" />
+                        @*om mail inte är grön då kommer detta meddelandet *@
                     @if (!validationMessage)
                     {
 
@@ -45,10 +47,10 @@
                 </div>
                 <div class="mb-3">
                     <label for="Age" class="form-label">Age:</label>
-                    <span>@validation.AgeConverting(Application.Dateofbirth)</span>
-                    @if (validation.AgeConverting(Application.Dateofbirth) > 10)
+                    <span>@validation.Agecalculate(Application.Dateofbirth)</span>
+                    @if (validation.Agecalculate(Application.Dateofbirth) > 10)
                     {
-                        Application.Age = validation.AgeConverting(Application.Dateofbirth);
+                        Application.Age = validation.Agecalculate(Application.Dateofbirth);
                     }
                     <ValidationMessage For="() => Application.Age" class="text-danger" />
                 </div>
@@ -92,8 +94,8 @@ else
     // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
     public async Task AddApplication()
     {
-         
-        if (Validation.RegexEmailCheck(Application.Email) && Validation.NameValid(Application.Name))
+        // jag kollar här om validering är gödkänt då är vi gröna och datan kan sparas i databasen 
+        if (Validation.EmailCheck(Application.Email) && Validation.NameValid(Application.Name))
         {
             validationMessage = true;
             DB.Application.Add(Application);
@@ -101,18 +103,31 @@ else
             // await ReadingTheTextFile();
             isSaved = false;
         }
+        // annars så ska användaren får ett fel meddelnadet enligt vad är det som var fel är det namnet som inte blev grön då ska
+        // användaren får ett fel meddelande som säger att namnet är fel 
         if (!Validation.NameValid(Application.Name))
         {
             validationMessage = false;
             nameError = "Ogilit namn! för & efter namn behöver du skriva ";
         }
-        if (!Validation.RegexEmailCheck(Application.Email))
+        // annars så är det mailet. Vad det gäller ålder som ska vara 10 eller äldre så har jag angett ett gräns i modelklassen Application
+        //samt att jag har gjort en liten kontroll där om åldren är mindre än 10 då ska åldren vara 0 och då sparas den inte i databasen. 
+        if (!Validation.EmailCheck(Application.Email))
         {
             validationMessage = false;
             emailError = "Ogilit Email";
         }
 
     }
+    /// <summary>
+    /// den metoden så läser jag genom  fela filen som vi har  för databasen i learnpoint
+    /// jag skapar en list av Application klassen och en till list för alla information som finns i text filen. och det som jag gör sedan är att jag tarbort
+    /// första raden eftersom jag fick en töm kolumn första gången, efter det så gör jag en loop där jag gör en konroll där det finns en töm string eller en
+    /// enter, och de sparar jag i parst array.  sedan skapar jag en ny insats av application klassen och där så spara jag börjar jag spara från den första
+    /// parts [1] som ska vara namnet, och sedan andra parts som ska vara födelsedatumet och osv. sen ligger jag all dessa i listan som jag har skapat
+    /// av Application klassen och sedan kallar jag på den metoden i AddApplication(). 
+    /// </summary>
+    /// OBS: Björn sätt att spara datan var mycket mer smidygare kolla på lektion nr 16 word doc. 
     // private async Task ReadingTheTextFile()
     // {
     //     await Task.Run(()=>
@@ -126,12 +141,10 @@ else
     //         Application application = new Application();
     //         application.Name = parts[1];
     //         application.Dateofbirth= DateTime.Parse(parts[2]);
-    //         application.Age = AgeConverting();
+    //         application.Age = Agecalculate();
     //         application.Email = parts[3];
     //         applications.Add(application);
     //     }
-    //     DB.Application.AddRange(applications);
-    //     DB.SaveChanges();
     // });
     // }
 }
